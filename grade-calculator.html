@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+</head>
+<body>
+
+    <script>
+        var mark = prompt("Please enter the student's mark (0-100):");
+        mark = Number(mark);
+
+        var grade;
+
+        if (mark >= 70 && mark <= 100) {
+            grade = "A";
+        } else if (mark >= 50 && mark <= 60) {
+            grade = "C";
+        } else if (mark >= 0 && mark <= 40) {
+            grade = "F";
+        } else {
+            grade = "N/A (mark falls outside the defined grade ranges)";
+        }
+
+        document.write("<h1>Mark: " + mark + " &mdash; Grade: " + grade + "</h1>");
+
+        alert("Mark: " + mark + " - Grade: " + grade);
+    </script>
+
+</body>
+</html>
